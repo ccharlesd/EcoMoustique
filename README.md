@@ -14,7 +14,7 @@ Convolutional Neural Network (CNN) for binary classification of insect images, f
 
 #### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/EcoMoustique.git
+git clone https://github.com/ccharlesd/EcoMoustique.git
 cd EcoMoustique
 ```
 
