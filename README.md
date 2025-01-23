@@ -74,4 +74,4 @@ jupyter notebook cnn_develop_load.ipynb
 5. Create a Pull Request
 
 ## License
-[Add your license information]
+Nothing for the moment
