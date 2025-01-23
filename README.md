@@ -9,10 +9,17 @@ Convolutional Neural Network (CNN) for binary classification of insect images, f
 - Python 3.8+
 - Git
 - pip or conda
+- [Git LFS](https://git-lfs.com)
+  
+  Download and install the Git command line extension. Once downloaded and installed, set up Git LFS for your user account by running:
+  ```bash
+  git lfs install
+  ```
+  You only need to run this once per user account.
 
 ### Installation
 
-#### Clone the Repository
+#### Clone the [Repository](https://github.com/ccharlesd/EcoMoustique/tree/main)
 ```bash
 git clone https://github.com/ccharlesd/EcoMoustique.git
 cd EcoMoustique
@@ -61,6 +68,37 @@ jupyter notebook cnn_develop_load.ipynb
 - Training visualization graphs
 - Test prediction samples
 
+## Testing the Model
+
+### Automated Tests
+The project includes automated tests to validate the model and its predictions:
+
+1. **Test Model Loading**: Verifies that the trained model (`insect_recognition_cnn_model.h5`) can be successfully loaded.
+2. **Test Model Predictions**: Confirms that the model can generate predictions for sample data, while visualizing the results.
+
+#### Run the Tests
+```bash
+python test_model.py
+```
+
+#### Visualize Predictions
+The `test_model_prediction` function displays a sample of test images along with their true and predicted labels:
+- True labels are mapped to readable names: `'Tiger'` for tiger mosquitoes and `'Misc'` for other insects.
+- Predictions are displayed alongside the true labels for comparison.
+
+Sample output (image grid):
+```
+True: Tiger
+Pred: Misc
+```
+
+Make sure `X_test.npy` and `y_test.npy` files are present in the project root to run the tests.
+
+## Outputs
+- Trained model: `insect_recognition_cnn_model.h5`
+- Training visualization graphs
+- Test prediction samples
+
 ## Troubleshooting
 - Ensure all dependencies are installed
 - Check data integrity in `data.zip`
@@ -75,3 +113,4 @@ jupyter notebook cnn_develop_load.ipynb
 
 ## License
 Nothing for the moment
+
