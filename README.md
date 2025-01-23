@@ -22,7 +22,6 @@ Convolutional Neural Network (CNN) for binary classification of insect images, f
 #### Clone the [Repository](https://github.com/ccharlesd/EcoMoustique/tree/main)
 ```bash
 git clone https://github.com/ccharlesd/EcoMoustique.git
-git clone https://github.com/ccharlesd/EcoMoustique.git
 cd EcoMoustique
 ```
 
@@ -94,11 +93,6 @@ Pred: Misc
 ```
 
 Make sure `X_test.npy` and `y_test.npy` files are present in the project root to run the tests.
-
-## Outputs
-- Trained model: `insect_recognition_cnn_model.h5`
-- Training visualization graphs
-- Test prediction samples
 
 ## Troubleshooting
 - Ensure all dependencies are installed
